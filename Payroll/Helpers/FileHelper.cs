@@ -12,11 +12,8 @@ namespace Payroll.Helpers
     {
         public static string GetFilePath(string fileName)
         {
-            // dir for the txt file relative to the exe or dll file
-            string currentDirectory = Directory.GetCurrentDirectory();
             // dir for the txt file relative to the c# file
-            string resDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\res\"));
-
+            string resDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\res\"));
             return Path.Combine(resDirectory, fileName);
         }
 

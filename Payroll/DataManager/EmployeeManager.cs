@@ -22,7 +22,7 @@ namespace Payroll.DataManager
             List<Employee> employees = new List<Employee>();
             try
             {
-                string[] lines = Helpers.FileHelper.ReadFromFile("employees.txt");
+                string[] lines = FileHelper.ReadFromFile("employees.txt");
           
                 foreach (string line in lines)
                 {
